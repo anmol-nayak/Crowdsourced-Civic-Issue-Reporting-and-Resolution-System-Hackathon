@@ -1,0 +1,30 @@
+
+> my-app@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\anmol\Downloads\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\anmol\Downloads\Hackathon\package-lock.json
+
+▲ Next.js 16.2.2 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 2.4s
+  Running TypeScript ...
+Failed to type check.
+
+./src/lib/prisma.ts:7:49
+Type error: Expected 1 arguments, but got 0.
+
+  [90m 5 |[0m };
+  [90m 6 |[0m
+[31m[1m>[0m [90m 7 |[0m [36mexport[0m [36mconst[0m prisma = globalForPrisma.prisma ?? [36mnew[0m [33mPrismaClient[0m();
+  [90m   |[0m                                                 [31m[1m^[0m
+  [90m 8 |[0m
+  [90m 9 |[0m [36mif[0m (process.env.[33mNODE_ENV[0m !== [32m'production'[0m) globalForPrisma.prisma = prisma;
+  [90m10 |[0m
+Next.js build worker exited with code: 1 and signal: null
